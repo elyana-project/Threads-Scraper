@@ -53,7 +53,7 @@ def send_to_make(data):
     
     print(f"Отправляю {len(data)} постов в Make...")
     # Отправляем весь список разом
-    response = requests.post(https://hook.eu1.make.com/fcs0wllqgmfigh7kboz4e4cp751mjq3s, json={"posts": data})
+    response = requests.post("https://hook.eu1.make.com/fcs0wllqgmfigh7kboz4e4cp751mjq3s", json={"posts": data})
     print(f"Статус отправки: {response.status_code}")
 
 if __name__ == "__main__":
